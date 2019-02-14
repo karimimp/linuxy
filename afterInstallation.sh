@@ -131,6 +131,7 @@ sudo apt install python3-numpy python3-scipy python3-matplotlib
 pip3 install requests
 pip3 install colorama
 pip3 install openpyexcel
+pip3 install pylint
 # jupyter notebook see the following:
 #https://datawookie.netlify.com/blog/2017/06/setting-up-jupyter-with-python-3-on-ubuntu/
 
