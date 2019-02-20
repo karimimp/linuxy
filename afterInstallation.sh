@@ -127,11 +127,13 @@ sudo apt-get -y install python-sympy
 sudo apt-get -y install python-matplotlib
 sudo apt-get -y install python-sphinx
 sudo apt install python3-numpy python3-scipy python3-matplotlib
-# external packages for python3
+# external packages for python3 and other python related stuff
 pip3 install requests
 pip3 install colorama
 pip3 install openpyexcel
 pip3 install pylint
+sudo apt-get install spyder3
+
 # jupyter notebook see the following:
 #https://datawookie.netlify.com/blog/2017/06/setting-up-jupyter-with-python-3-on-ubuntu/
 
