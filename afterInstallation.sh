@@ -133,6 +133,7 @@ pip3 install requests
 pip3 install colorama
 pip3 install openpyexcel
 pip3 install pylint
+pip3 install pint # for unit coversion in python
 sudo apt-get install spyder3
 
 # jupyter notebook see the following:
