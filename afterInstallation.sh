@@ -65,6 +65,7 @@ sudo apt-get -y install sloccount # counting source lines of code
 sudo apt -y install tree 
 sudo apt install samba
 sudo apt-get install trash-cli # trash filename (moves filename to trash)
+sudo apt-get install htop
 
 # Indicator-SysMonitor
 sudo add-apt-repository ppa:fossfreedom/indicator-sysmonitor
