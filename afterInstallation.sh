@@ -136,6 +136,7 @@ pip3 install openpyexcel
 pip3 install pylint
 pip3 install pint # for unit coversion in python
 pip3 install pandas
+pip3 install tabulate
 sudo apt-get install spyder3
 
 # jupyter notebook see the following:
