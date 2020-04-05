@@ -117,7 +117,7 @@ sudo apt-get -y install liblapack-doc
 sudo apt-get -y install liblapack-dev
 sudo apt-get -y install libc6-dev-i386
 
-# Python
+# Python # or install anconda
 sudo apt-get -y install dvipng jabref
 sudo apt-get -y install libfreetype6-dev
 sudo apt-get -y install python-dev
@@ -173,6 +173,8 @@ sudo apt install -y openmpi-bin
 sudo apt install veusz 
 
 # Text-editor Vscode
+sudo snap install --classic code # or code-insiders
+# or
 curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
 sudo install -o root -g root -m 644 microsoft.gpg /etc/apt/trusted.gpg.d/
 sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
