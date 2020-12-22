@@ -53,6 +53,9 @@ sudo apt -y install samba
 sudo apt-get -y install trash-cli # trash filename (moves filename to trash)
 sudo apt-get -y install htop
 
+# BingWall
+# install bingwall from Software center (daily Bing images for wallpapers)
+
 # Coding
 sudo apt-get -y install git-cola
 sudo apt-get -y install meld
