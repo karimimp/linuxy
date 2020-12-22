@@ -9,6 +9,7 @@ sudo shutdown -r now
 
 # Ubuntu Tweak
 sudo apt install gnome-tweak-tool
+sudo apt-get install -y gnome-clocks
 
 # zshell
 sudo apt-get install zsh
@@ -21,7 +22,7 @@ sudo apt install ubuntu-restricted-extras
 # Dropbox
 sudo apt-get -y install nautilus-dropbox
 # For Ubuntu Mate install dropbox from Software Boutique
-
+# For Ubuntu 20.04 install dropbox from Software (There is no shame in that!)
 # Google Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
