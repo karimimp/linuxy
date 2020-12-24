@@ -56,6 +56,12 @@ sudo apt-get -y install htop
 # BingWall
 # install bingwall from Software center (daily Bing images for wallpapers)
 
+# Latex
+sudo apt install texlive-latex-extra
+sudo apt install texlive-science texlive-science-doc
+sudo apt install texmaker
+sudo apt -y update && sudo apt -y upgrade
+
 # Coding
 sudo apt-get -y install git-cola
 sudo apt-get -y install meld
