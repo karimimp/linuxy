@@ -8,14 +8,15 @@ sudo shutdown -r now
 ##### Utilities #####
 
 # Ubuntu Tweak
-sudo apt install gnome-tweak-tool
-sudo apt-get install -y gnome-clocks
 sudo apt-get install curl
 
 # zshell
 sudo apt-get install zsh
 sudo apt-get install git git-core
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
+# chage the default shell to zsh
+# chsh -s $(which zsh)
+# then log out and log in
 
 # Ubuntu Restricted Extras
 sudo apt install ubuntu-restricted-extras
@@ -72,3 +73,7 @@ wget https://www.mendeley.com/repositories/ubuntu/stable/amd64/mendeleydesktop-l
 sudo dpkg -i mendeleydesktop-latest
 sudo apt-get update
 rm -f mendeleydesktop-latest
+# if you get an error of dependency problem run the following:
+# sudo apt --fix-broken install 
+# and then:
+# sudo dpkg -i mendeleydesktop-latest
