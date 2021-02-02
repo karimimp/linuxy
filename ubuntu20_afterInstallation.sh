@@ -32,7 +32,7 @@ sudo snap install vlc
 sudo snap install spotify 
 
 # VSCode
-sudo snapp install code --classic
+sudo snap install code --classic
 
 # Brave browser
 sudo snap install brave
@@ -57,6 +57,8 @@ sudo apt-get -y install htop
 # BingWall
 # install bingwall from Software center (daily Bing images for wallpapers)
 
+# Double Commander
+sudo apt-get install doublecmd-qt
 # Latex
 sudo apt install texlive-latex-extra
 sudo apt install texlive-science texlive-science-doc
