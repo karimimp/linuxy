@@ -1,0 +1,44 @@
+#!/bin/bash
+# from openfoam.org
+VER=11
+OFVER=OpenFOAM-$VER
+DLDIR=OpenFOAM-$VER-version-$VER
+export FOAM_INST_DIR=$HOME/OpenFOAM
+
+# Dont change below
+if [ ! -d $FOAM_INST_DIR ]; then mkdir -p $FOAM_INST_DIR ; fi
+if [ -d $FOAM_INST_DIR ]; then
+	TESTFILE=$FOAM_INST_DIR/$(date +%Y%m%d%H%M%S)
+	touch $TESTFILE
+	if [ -f $TESTFILE ]; then
+		rm $TESTFILE
+	else
+		echo "$FOAM_INST_DIR not writable, exit!"
+		exit 0
+	fi
+else
+	echo "Directory : $FOAM_INST_DIR dont exist, exit"
+	exit 0
+fi
+
+cd $FOAM_INST_DIR
+if [ ! -d $FOAM_INST_DIR/$DLDIR ]; then 
+	wget -O - http://dl.openfoam.org/source/$VER | tar xz
+else
+	echo "$FOAM_INST_DIR/$DLDIR already exist, can NOT download, Exit"
+	exit 0
+fi
+
+if [ -d $FOAM_INST_DIR/$DLDIR ]; then
+	if [ ! -d $FOAM_INST_DIR/$OFVER ]; then
+		mv $FOAM_INST_DIR/$DLDIR $FOAM_INST_DIR/$OFVER
+	else
+		echo "$FOAM_INST_DIR/$OFVER already exist, can create , Exit"
+		exit 0
+	fi
+else
+	echo "$FOAM_INST_DIR/$DLDIR DONT exist , Exit"
+	exit 0
+fi
+
+echo "done!"

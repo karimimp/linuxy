@@ -1,0 +1,23 @@
+# Settings for OpenFoam
+
+# module add gcc-toolset-11
+# module add cmake/3.20.5
+# module add python/3916
+# module add openmpi/4.1.5
+
+export FOAM_INST_DIR=$HOME/OpenFOAM/
+. $FOAM_INST_DIR/OpenFOAM-v2306/etc/bashrc
+
+# Settings for OpenMPI
+# export MPI_ROOT=$MPI_ARCH_PATH
+# export TMPDIR=/tmp
+
+# Set swak4foam variables
+# PP=$(echo $PYTHONPATH | cut -f1 -d':')
+# PI=$(echo $PP | sed 's/lib.*//')
+# PV=$(echo $PP | sed 's|.*lib||' | cut -f2 -d'/')
+# export SWAK_PYTHON3_INCLUDE="-I$PI""include/$PV"
+# export SWAK_PYTHON3_LINK="-L$PI""lib -l$PV"
+# export SWAK_COMPILE_GRAMMAR_OPTION=-O1
+# export SWAK_COMPILE_LEXER_OPTION=-O1
+
