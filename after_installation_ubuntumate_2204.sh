@@ -29,10 +29,21 @@ sudo apt install ubuntu-restricted-extras -y
 sudo snap install --classic code
 sudo snap install spotify
 sudo snap install vlc
+sudo snap install todoist
+
+# dropbox
+cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
+~/.dropbox-dist/dropboxd
 
 # python3
 sudo apt install python3-pip -y 
 sudo apt install python3-ipython -y
 sudo pip3 install --upgrade pip
+sudo apt-get install meld -y
 pip3 install jupyterlab
 # on vscode install python + jupyter required extensions.
+
+# after compiling different OF versions IPython might not work
+# if this happens
+sudo pip3 uninstall ipython
+sudo pip3 install ipython
