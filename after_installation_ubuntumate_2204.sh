@@ -31,9 +31,13 @@ sudo snap install spotify
 sudo snap install vlc
 sudo snap install todoist
 
+# Okular
+sudo apt install okular
+
 # dropbox
 cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
 ~/.dropbox-dist/dropboxd
+# install dropbox from store
 
 # brave
 sudo apt install curl
