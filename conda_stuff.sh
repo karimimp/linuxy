@@ -13,3 +13,9 @@ conda search "packagename"
 
 # install packages
 conda install -c "packagename"
+
+# show outdated packages
+conda show --outdated
+
+# bulk updated
+conda update --all
